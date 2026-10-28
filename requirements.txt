@@ -1,7 +1,9 @@
 bech32==1.2.0
 blockfrost-python==0.4.2
-cbor2==5.4.2.post1
+cbor2==5.7.1
 httplib2==0.20.4
 requests==2.25.1
 typing==3.7.4.3
 fireblocks_sdk
+# blockfrost-python 0.4.2 imports pkg_resources, which setuptools >= 81 no longer ships
+setuptools>=80,<81
